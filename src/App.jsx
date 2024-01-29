@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
+      <h1 className="bg-black text-red text-white text-4xl capitalize font-bold ">
+       welcome to nike store project
       </h1>
     </>
   )
