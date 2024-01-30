@@ -1,14 +1,16 @@
 
 import './App.css'
-
+// component
+import { Hero } from "./components";
+import { heroapi } from "./data/data";
 function App() {
 
 
   return (
     <>
-      <h1 className="bg-black text-red text-white text-4xl capitalize font-bold ">
-       welcome to nike store project
-      </h1>
+     <main>
+      <Hero heroapi={heroapi}/>
+     </main>
     </>
   )
 }
