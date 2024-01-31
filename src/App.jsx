@@ -1,8 +1,8 @@
 
 import './App.css'
 // component
-import { FlexContent, Hero, Sale } from "./components";
-import { heroapi, popularsales, toprateslaes,highlight,sneaker } from "./data/data";
+import { FlexContent, Hero, Sale, Stories } from "./components";
+import { heroapi, popularsales, toprateslaes,highlight,sneaker,story } from "./data/data";
 function App() {
 
 
@@ -14,6 +14,7 @@ function App() {
         <FlexContent endpoint={highlight} ifExists/>
         <Sale endpoint={toprateslaes} />
         <FlexContent endpoint={sneaker} />
+        <Stories story={story}/>
       </main>
     </>
   )
