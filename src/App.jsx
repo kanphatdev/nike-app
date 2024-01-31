@@ -1,16 +1,18 @@
 
 import './App.css'
 // component
-import { Hero } from "./components";
-import { heroapi } from "./data/data";
+import { Hero, Sale } from "./components";
+import { heroapi, popularsales, toprateslaes } from "./data/data";
 function App() {
 
 
   return (
     <>
-     <main>
-      <Hero heroapi={heroapi}/>
-     </main>
+      <main className='flex flex-col gap-16 relative'>
+        <Hero heroapi={heroapi} />
+        <Sale endpoint={popularsales} />
+        <Sale endpoint={toprateslaes} />
+      </main>
     </>
   )
 }
