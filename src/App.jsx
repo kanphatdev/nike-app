@@ -1,8 +1,8 @@
 
 import './App.css'
 // component
-import { FlexContent, Hero, Sale, Stories } from "./components";
-import { heroapi, popularsales, toprateslaes,highlight,sneaker,story } from "./data/data";
+import { FlexContent, Footer, Hero, Sale, Stories } from "./components";
+import { heroapi, popularsales, toprateslaes,highlight,sneaker,story,footerAPI } from "./data/data";
 function App() {
 
 
@@ -16,6 +16,7 @@ function App() {
         <FlexContent endpoint={sneaker} />
         <Stories story={story}/>
       </main>
+      <Footer footerAPI={footerAPI} />
     </>
   )
 }
