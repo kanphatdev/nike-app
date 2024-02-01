@@ -1,13 +1,14 @@
 
 import './App.css'
 // component
-import { FlexContent, Footer, Hero, Sale, Stories } from "./components";
+import { FlexContent, Footer, Hero, Navbar, Sale, Stories } from "./components";
 import { heroapi, popularsales, toprateslaes,highlight,sneaker,story,footerAPI } from "./data/data";
 function App() {
 
 
   return (
     <>
+    <Navbar/>
       <main className='flex flex-col gap-16 relative'>
         <Hero heroapi={heroapi} />
         <Sale endpoint={popularsales} />
