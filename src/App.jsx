@@ -1,7 +1,7 @@
 
 import './App.css'
 // component
-import { FlexContent, Footer, Hero, Navbar, Sale, Stories } from "./components";
+import { Cart, FlexContent, Footer, Hero, Navbar, Sale, Stories } from "./components";
 import { heroapi, popularsales, toprateslaes,highlight,sneaker,story,footerAPI } from "./data/data";
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <Cart/>
       <main className='flex flex-col gap-16 relative'>
         <Hero heroapi={heroapi} />
         <Sale endpoint={popularsales} />
