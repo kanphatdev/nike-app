@@ -1,6 +1,6 @@
 import { ChevronDoubleLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const CartCount = ({onCartToggle}) => {
+const CartCount = ({onCartToggle,onClearCartItems,totalQTY}) => {
   return (
     <>
       {/* open CartCount container*/}
@@ -13,7 +13,7 @@ const CartCount = ({onCartToggle}) => {
           </div>
           <div className="grid items-center">
             <h1 className="capitalize text-base font-medium text-slate-900">
-              your cart <span className="bg-theme-cart rounded px-1 py-0.5 text-slate-100 font-normal text-xs">(Items)</span>
+              your cart <span className="bg-theme-cart rounded px-1 py-0.5 text-slate-100 font-normal text-xs"> {totalQTY} (Items)</span>
             </h1>
           </div>
         </div>
@@ -21,7 +21,7 @@ const CartCount = ({onCartToggle}) => {
 
         {/* open CartCount action section */}
         <div className="flex items-center">
-          <button type="button" className="bg-theme-cart rounded active:scale-90 p-0.5" onClick={onCartToggle}>
+          <button type="button" className="bg-theme-cart rounded active:scale-90 p-0.5" onClick={onClearCartItems}>
             <XMarkIcon className="h-5 w-5 text-white stroke-[2]"/>
           </button>
         </div>
