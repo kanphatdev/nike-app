@@ -1,8 +1,14 @@
 
 
-const CartItem = () => {
+const CartItem = ({ item: { id, title, text, img, color, shadow, price, cartQuantity } }) => {
   return (
-    <div>CartItem</div>
+    <>
+      {/*open CartItem wrapper */}
+      <div className="">
+        
+      </div>
+      {/*close  CartItem wrapper */}
+    </>
   )
 }
 
